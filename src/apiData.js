@@ -20,9 +20,7 @@ function Data ()  {
 
   return (
     <div>
-  {dataS.map(item => 
-   <Body data={item} />
-)}
+<Body data ={dataS} />
   </div>
     
   );
