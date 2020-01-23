@@ -1,6 +1,8 @@
 import React, {useState, useEffect} from "react";
 import axios from "axios";
 import Body from "./body";
+import Header from "./header";
+import Footer from "./footer";
 
 
 function Data ()  {
@@ -20,7 +22,10 @@ function Data ()  {
 
   return (
     <div>
+      <Header data={dataS}/>
 <Body data ={dataS} />
+<Footer data = {dataS}/>
+
   </div>
     
   );
