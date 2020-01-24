@@ -5,6 +5,7 @@ import Header from "./header";
 import Footer from "./footer";
 
 
+
 function Data ()  {
     const [dataS , setData] = useState([])
   useEffect( () => {
@@ -21,9 +22,12 @@ function Data ()  {
   }, []);
 
   return (
+    
     <div>
       <Header data={dataS}/>
+     
 <Body data ={dataS} />
+
 <Footer data = {dataS}/>
 
   </div>
