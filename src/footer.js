@@ -1,12 +1,20 @@
 import React from "react";
+import styled from "styled-components";
+
+const Foot = styled.footer `
+display: flex;
+flex-direction: column;
+ background-color: grey;
+
+`
 
 const Footer = props =>{
 return(
-    <footer>
-        <copyright>
-    <p>{props.data.copyright} {props.data.date}</p> 
-    </copyright>
-    </footer>
+
+    <Foot>
+        
+    <p>@CopyRight {props.data.copyright} {props.data.date}</p>     
+    </Foot>
 )
 
 }
